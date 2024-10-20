@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 2000
 var cors = require('cors')
 
 app.use(cors())
@@ -8,7 +8,13 @@ app.use(cors())
 app.get('/api/product', (req, res) => {
   res.json({
     name: "Омлет по-итальянски",
-    description: "Лучший выбор для завтрака"
+    image: 'https://i.postimg.cc/0rRJDyX9/omlet.jpg',
+    ingredients: [
+      "Яйцо - 3 шт.",
+      "Помидор - 1 шт.",
+      "Молоко - 50 мл."
+    ],
+    description: "Приготовление итальянского омлета начинаем с того, что очищаем овощи (по необходимости) от кожуры. Нарезаем лук тоненькими полукольцами..."
   })
 })
 
