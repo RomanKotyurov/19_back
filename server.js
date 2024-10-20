@@ -19,7 +19,7 @@ app.get('/api/product', (req, res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Less 19 Server (Back-end)')
+    res.send('Less 20 Server (Back-end)')
   })
 
 app.listen(port, () => {
